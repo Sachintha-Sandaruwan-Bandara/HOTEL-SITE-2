@@ -1,0 +1,136 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol,
+ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* /* */
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Darken the images */
+.carousel-inner img {
+  filter: brightness(0.5) contrast(1.2) sepia(0.5) saturate(1.5);
+}
+.heading {
+  color: #ffffff;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.09
+  ); /* Background color with alpha channel for transparency */
+  backdrop-filter: blur(10px); /* Blur the background */
+  padding: 10px;
+  border-bottom: 1px solid #ffffff7f;
+}
+li:hover {
+  text-decoration: underline;
+}
+.logo {
+  height: 100px;
+  background-color: #ffffff1f;
+  padding: 10px;
+  border-radius: 50%;
+}
+.gestro {
+  height: 80vh;
+}
+.gestro h1 {
+  font-size: 100px;
+  color: #ffffff;
+}
+
+#container {
+  display: flex;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.circle:hover {
+  color: black;
+  background-color: white;
+}
+
+.circle {
+  background-color: #ffffff;
+  position: absolute;
+  padding: 10px;
+  /* height: 50px;
+  width: 50px; */
+  /* border: solid 2px gray; */
+  border-radius: 100%;
+}
+.hamburger {
+  color: #ffffff;
+}
+
+.green {
+  background: green;
+}
