@@ -56,6 +56,9 @@ textarea {
   display: block;
 }
 /* /* */
+body {
+  background-color: black;
+}
 
 .carousel {
   width: 100vw;
@@ -63,13 +66,13 @@ textarea {
 }
 
 .carousel-inner {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .carousel-item img {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
 }
 /* Darken the images */
@@ -121,7 +124,7 @@ li:hover {
 .circle {
   background-color: #ffffff;
   position: absolute;
-  padding: 10px;
+  padding: 30px;
   /* height: 50px;
   width: 50px; */
   /* border: solid 2px gray; */
@@ -131,6 +134,37 @@ li:hover {
   color: #ffffff;
 }
 
-.green {
-  background: green;
+@media screen and (max-width: 650px) {
+  .since {
+    display: none;
+  }
+  .stars {
+    display: none;
+  }
+
+  .logo {
+    height: 80px;
+    background-color: #ffffff1f;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .gestro h1 {
+    font-size: 80px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .gestro h1 {
+    font-size: 50px;
+    color: #ffffff;
+  }
+
+  .logo {
+    height: 60px;
+    background-color: #ffffff1f;
+    padding: 10px;
+    border-radius: 50%;
+  }
+ 
 }
