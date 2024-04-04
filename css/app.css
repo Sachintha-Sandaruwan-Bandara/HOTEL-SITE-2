@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lilita+One&family=Ms+Madi&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Scribble&display=swap");
+
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
 
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
@@ -133,6 +135,57 @@ li:hover {
 .hamburger {
   color: #ffffff;
 }
+.menu-booking {
+}
+.menu,
+.booking {
+  text-align: center;
+  color: #ffffff;
+  background-color: #141d24;
+  width: 150px;
+  padding: 20px 10px 20px 10px;
+  border-radius: 30px;
+}
+.menu {
+  margin-left: 20px;
+}
+.booking {
+  margin-right: 20px;
+}
+
+.prefer {
+  margin-top: 100px;
+  font-family: "Charmonman", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #1f1914;
+}
+.room-img {
+  position: relative;
+  display: inline-block;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffff;
+  outline: 1px solid #ffff;
+  outline-offset: 10px;
+  
+
+  /* padding: 10px;  */
+
+  height: 400px;
+  width: 500px;
+}
+.choose {
+  background-color: #ffffff;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100px;
+}
 
 @media screen and (max-width: 650px) {
   .since {
@@ -153,6 +206,21 @@ li:hover {
     color: #ffffff;
   }
 }
+@media screen and (max-width: 535px) {
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffff;
+    outline: 1px solid #ffff;
+    outline-offset: 10px;
+    /* padding: 10px;  */
+
+    height: 200px;
+    width: 300px;
+  }
+}
 
 @media screen and (max-width: 455px) {
   .gestro h1 {
@@ -166,5 +234,18 @@ li:hover {
     padding: 10px;
     border-radius: 50%;
   }
- 
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffff;
+    outline: 1px solid #ffff;
+    outline-offset: 10px;
+    /* padding: 10px;  */
+
+    height: 100px;
+    width: 200px;
+  }
 }
