@@ -154,8 +154,7 @@ li:hover {
 }
 
 .prefer {
-  margin-top: 100px;
-  font-family: "Courier Prime", monospace;
+  font-family: "Ms Madi", cursive;
   font-weight: 400;
   font-style: normal;
   color: #1f1914;
@@ -550,5 +549,14 @@ a {
 
     height: 100px;
     width: 200px;
+  }
+  .menu,
+  .booking {
+    text-align: center;
+    color: #ffffff;
+    background-color: #141d24;
+    width: 150px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 30px;
   }
 }
